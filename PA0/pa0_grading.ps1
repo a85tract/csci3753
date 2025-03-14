@@ -1,3 +1,4 @@
+#Hossein: This script 
 # Add this at the beginning of your script
 if (-not (Get-Module -ListAvailable -Name ActiveDirectory)) {
     Write-Error "ActiveDirectory module not found. Please install RSAT tools."
@@ -6,7 +7,7 @@ if (-not (Get-Module -ListAvailable -Name ActiveDirectory)) {
 Import-Module ActiveDirectory
 # Add this before attempting to connect to vSphere
 if (-not (Get-Module -ListAvailable -Name VMware.PowerCLI)) {
-    Write-Error "VMware.PowerCLI module not found. Install using: Install-Module -Name VMware.PowerCLI -Scope CurrentUser"
+    Write-Error "VMware.PowerCLI module not found. Install using: Install-Module -Name VMware.PowerCLI -RequiredVersion 12.7.0.20091289"
     exit 1
 }
 Import-Module VMware.PowerCLI
