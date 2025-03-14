@@ -1,4 +1,5 @@
-#Hossein: This script 
+#Hossein: This script must be executed on an enterprise windows machine within the CU cluster with admin access to the course Active Directory and vSphere (Ask Adam for it)
+#Note that the version of powercli installed on this machine must be 12.7.0.20091289 otherwise it will not work
 # Add this at the beginning of your script
 if (-not (Get-Module -ListAvailable -Name ActiveDirectory)) {
     Write-Error "ActiveDirectory module not found. Please install RSAT tools."
